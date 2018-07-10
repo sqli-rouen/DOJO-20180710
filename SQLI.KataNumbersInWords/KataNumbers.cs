@@ -6,6 +6,9 @@ namespace SQLI.KataNumbersInWords
     {
         public static string ToWords(string number)
         {
+            if(number == default(string)){
+                return string.Empty;
+            }
             throw new NotImplementedException();
         }
     }
