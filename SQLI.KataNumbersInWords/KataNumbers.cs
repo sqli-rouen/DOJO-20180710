@@ -9,6 +9,10 @@ namespace SQLI.KataNumbersInWords
             if(number == default(string)){
                 return string.Empty;
             }
+
+            if (number == "1")
+                return "One";
+            
             throw new NotImplementedException();
         }
     }
