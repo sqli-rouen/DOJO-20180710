@@ -25,5 +25,16 @@ namespace SQLI.KataNumbersInWords.Tests
             // Assert
             Assert.Equal("One", result);
         }
+
+        [Fact]
+        public void Returns_twelve_for_12()
+        {
+            // Arrange
+            string param = "12";
+            // Act
+            var result = KataNumbers.ToWords(param);
+            // Assert
+            Assert.Equal("Twelve", result);
+        }
     }
 }
