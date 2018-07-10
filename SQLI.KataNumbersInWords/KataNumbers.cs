@@ -12,6 +12,9 @@ namespace SQLI.KataNumbersInWords
 
             if (number == "1")
                 return "One";
+
+            if (number == "12")
+                return "Twelve";
             
             throw new NotImplementedException();
         }
