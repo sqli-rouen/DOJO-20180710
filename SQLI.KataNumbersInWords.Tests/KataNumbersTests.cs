@@ -14,5 +14,16 @@ namespace SQLI.KataNumbersInWords.Tests
             // Assert
             Assert.Equal(String.Empty, result);
         }
+
+        [Fact]
+        public void Returns_One_for_1()
+        {
+            // Arrange
+            string param = "1";
+            // Act
+            var result = KataNumbers.ToWords(param);
+            // Assert
+            Assert.Equal("One", result);
+        }
     }
 }
